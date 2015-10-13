@@ -17,16 +17,39 @@ html,
 }
 .one
 {
-	background: url(images/dchr-bg1.jpg)no-repeat center center fixed;
+	background: url(images/dchr-bg1-blurred.jpg)no-repeat center center fixed;
 	background-size: cover;
 	padding-bottom: 100px;
 	border-bottom: 2px solid white;
 	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .two
 {
 	background: url(images/dchr-bg2.jpg)no-repeat center center fixed;
 	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero
+{
+	p
+	{
+		color: white;
+		text-align: center;
+		margin: 10px auto 25px auto;
+		font-size: 20px;
+		max-width: 575px;
+		line-height: 1.2em;
+		font-weight: 100;
+		border-top: 1px solid rgba(255,255,255,.4);
+		padding-top: 25px;
+	}
 }
 
 .ntz-bgStripe
@@ -58,13 +81,13 @@ background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 100%); /
 background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#26000000',GradientType=0 ); /* IE6-9 */
 }
-.ntz-logo 
+.dchr-logo 
 {
 	display: block;
 	width: 80%;
 	max-width: 450px;
 	margin: 25px auto 0px auto;
-	opacity: .8;
+	opacity: 1;
 }
 .video {
 }
@@ -124,6 +147,7 @@ h1
 {
 	text-align: center;
 	margin-bottom: 0px;
+	margin-top: 50px;
 	a 
 	{
 		margin-right: 25px;
@@ -131,8 +155,10 @@ h1
 		text-decoration: none;
 		text-transform: uppercase;
 		cursor: hand; cursor: pointer;
-		font-weight: bold;
-		font-size: 34px;
+		font-weight: 500;
+		font-size: 17px;
+		border: 1px solid white;
+		padding: 5px 10px;
 	}
 	a:last-of-type
 	{
@@ -140,7 +166,6 @@ h1
 	}
 	a:hover, p:hover
 	{
-		text-decoration: underline;
 	}
 	img {
 		width: 50px;
@@ -180,7 +205,7 @@ button:hover {
 	margin-top: 100%;
 }
 .push {
-	text-align: left;
+	text-align: center;
 	width: 90%;
 	max-width: 960px;
 	margin: 100px auto 50px auto;
@@ -200,6 +225,8 @@ button:hover {
 		max-width: 500px;
 		line-height: 1.3em;
 		opacity: .8;
+		margin: auto;
+		margin-top: 10px;
 	}
 	img
 	{
@@ -220,6 +247,7 @@ button:hover {
 			transition: all 150ms ease-out;
     		margin-bottom: 50px;
     		font-weight: 500;
+    		margin-top: 25px;
 		}
 		.label:hover 
 		{
@@ -314,7 +342,6 @@ button {
 
 .siteby 
 {
-	margin: auto;
 	display: block;
 	text-align: center;
 	width: 100%;
@@ -323,6 +350,8 @@ button {
 	position: relative;
 	z-index: 100;
 	color: rgba(255,255,255,.4);
+	position: absolute;
+    bottom: 0;
 	a 
 	{
 		color: rgba(255,255,255,.4);
@@ -348,9 +377,9 @@ and (max-width : 650px)  {
 	padding-bottom: 70px;
 }
 
-.ntz-logo 
+.dchr-logo 
 {
-	width: 100%;
+	width: 90%;
 }
 
 .play
